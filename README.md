@@ -1,9 +1,10 @@
-# Course Name
-Repository for [COURSE NAME] course given by Assoc. Prof. Dr. Bora Canbula 
+# Data Science
+Repository for Data Science course given by Assoc. Prof. Dr. Bora Canbula 
 at Computer Engineering Department of Manisa Celal Bayar University.
 
 # Course Information
-Description of the course.
+This is a graduate level course which aims the students to develop practical data science 
+abilities and programming skills for data science projects.
 
 # Weekly Content
 You can find the codes that written in the laboratory in the folder WeekXX.
@@ -13,4 +14,6 @@ In the root folder there is a LectureNotes.pdf file, which is updated weekly aft
 At the end of the every chapter, you will also find a Problem Set.
 
 # Codes and Videos from Previous Years
-Links to the codes and videos from previous years.
+You can find some supplementary videos from previous years in the following YouTube playlist.
+
+https://youtube.com/playlist?list=PL30NBs02RsiUNxMoibOtpaKJ4jg_0PWCM&si=WyxmcLCuxpJZ7nol
