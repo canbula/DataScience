@@ -15,13 +15,7 @@ def list_counts(counts_list):
 def reverse_dict(original_dict):
     new_dict = {}
     for key, value in original_dict.items():
-        if value in new_dict:
-            new_dict[value].append(key)
-        else:
-            new_dict[value]=[key]
+            new_dict[value]=key
 
     return new_dict
-
-
-
 
