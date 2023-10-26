@@ -1,7 +1,7 @@
 import numpy as np
 import random
-def fuction_description(n,d):
-   m=n-2
+def replace_center_with_minus_one(d,n,m):
+   
    if d<=0 :
         raise ValueError("d<=0 cannot be")
    if m>n:
@@ -10,8 +10,10 @@ def fuction_description(n,d):
         raise ValueError("n<0 cannot be")
    if m<0:
         raise ValueError("m<0 cannot be")
-   m_array=np.random.randint(int("1"+"0"*(d-1)),int("1"+"0"*d),size=(n,n))
-   m_array[1:-1,1:-1]=-1
-   return(m_array)
-
-fuction_description(4,3)
+  
+   r_array=np.random.randint(int("1"+"0"*(d-1)),int("1"+"0"*d),size=(n,n))
+   start = (n - (m)) // 2
+   end = start +(m) 
+   r_array[start:end, start:end] = -1
+   return r_array
+replace_center_with_minus_one(2,5,3)
