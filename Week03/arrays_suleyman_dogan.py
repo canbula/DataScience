@@ -5,13 +5,13 @@ def replace_center_with_minus_one(d, n, m):
     # m is the size of the center
     # d is the number of digits of the maximum value
     if n < 0:
-        return "Expected an error for negative n"  # n < 0
+        raise ValueError("Expected an error for negative n")  # n < 0
     if m < 0:
-        return "Expected an error for negative m" # m < 0
+        raise ValueError("Expected an error for negative m") # m < 0
     if m > n:
-        return "Expected an error when m > n" # m > n
+        raise ValueError("Expected an error when m > n") # m > n
     if d <= 0:
-        return "Expected an error when d <= 0" # d <= 0
+        raise ValueError( "Expected an error when d <= 0" )# d <= 0
 
     # Minimum and maximum values for the random array
     min_value = 10 ** (d - 1)
