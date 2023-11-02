@@ -1,0 +1,28 @@
+id,name,age,gender,email,math_score,reading_score,city
+1,Anna,12,F,anna.email.com,88,93.5,New York
+2,Bob,13,,bob@email.com,90,88,Los Angeles
+3,Chris,NaN,M,chris@email.com,NaN,85,Boston
+4,Debby,13,F,debby_at_email.com,,New York
+5,Bob,13,M,bob@email.com,90,88,Los Angeles
+6,Eva,11,F,evan@email.com,95,78,San Francisco
+7,Frank,,M,,82,77.5,Seattle
+8,Gina,12,F,gina@email.com,76,NaN,Chicago
+9,Heidi,14,F,,99,93,Boston
+10,Ian,13,M,ian@email,92,88,New York
+11,Jane,14,F,jane@email.com,,89.5,Washington
+12,Kyle,12,M,,84,NaN,Boston
+13,Lea,13,F,lea@email.com,80,92,Chicago
+14,Mike,,M,,70,70.5,Seattle
+15,Nia,11,F,nia@email.com,90,95,Los Angeles
+16,Omar,13,M,omar@email.org,95,,Houston
+17,Pat,12,M,pat@email.com,88,90,New York
+18,Quinn,NaN,F,,88,87,Chicago
+19,Rick,13,M,rick@email.com,NaN,85,Seattle
+20,Sam,12,F,sam@email.com,NaN,88,San Francisco
+21,Tom,NaN,M,tom@email.com,75,NaN,Los Angeles
+22,Uma,11,F,uma@email.com,80,90,New York
+23,Vik,13,M,vik@email.com,88,92,Boston
+24,Walt,12,M,walt@email.com,70,75,Seattle
+25,Xiu,14,F,xiu@email.com,65,NaN,Chicago
+26,Yana,13,F,yana@email.com,90,93,Boston
+27,Zack,14,M,zack@email.com,NaN,NaN,New York
