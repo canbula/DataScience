@@ -1,0 +1,21 @@
+name,age,gender,email,math_score,reading_score,city
+Anna,12,F,anna.email.com,88.0,93.5,New York
+Chris,13,M,chris@email.com,88.0,85.0,Boston
+Bob,13,M,bob@email.com,90.0,88.0,Los Angeles
+Eva,11,F,evan@email.com,95.0,78.0,San Francisco
+Gina,12,F,gina@email.com,76.0,88.0,Chicago
+Ian,13,M,ian@email,92.0,88.0,New York
+Jane,14,F,jane@email.com,88.0,89.5,Washington
+Lea,13,F,lea@email.com,80.0,92.0,Chicago
+Nia,11,F,nia@email.com,90.0,95.0,Los Angeles
+Omar,13,M,omar@email.org,95.0,88.0,Houston
+Pat,12,M,pat@email.com,88.0,90.0,New York
+Rick,13,M,rick@email.com,88.0,85.0,Seattle
+Sam,12,F,sam@email.com,88.0,88.0,San Francisco
+Tom,13,M,tom@email.com,75.0,88.0,Los Angeles
+Uma,11,F,uma@email.com,80.0,90.0,New York
+Vik,13,M,vik@email.com,88.0,92.0,Boston
+Walt,12,M,walt@email.com,70.0,75.0,Seattle
+Xiu,14,F,xiu@email.com,65.0,88.0,Chicago
+Yana,13,F,yana@email.com,90.0,93.0,Boston
+Zack,14,M,zack@email.com,88.0,88.0,New York

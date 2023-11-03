@@ -52,4 +52,8 @@ if __name__ == "__main__":
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/dirty_data.csv"
     with Clean(file_path) as clean:
         clean_df = clean()
+    # save the clean data to a new csv file
+    clean_df.to_csv(
+        f"{os.path.dirname(os.path.realpath(__file__))}/clean_data.csv", index=False
+    )
     print(clean_df)
