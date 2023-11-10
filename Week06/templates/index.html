@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rents in Manisa Yunusemre</title>
+</head>
+<body>
+<h1>House Rents in Manisa Yunusemre</h1>
+<h2>Statistics</h2>
+<p>Average Price: {{ stats.average_price }}</p>
+<p>Average Area: {{ stats.average_area }}</p>
+<p>Average Rooms: {{ stats.average_rooms }}</p>
+<p>Minimum Price: {{ stats.min_price }}</p>
+<p>Maximum Price: {{ stats.max_price }}</p>
+<p>Minimum Area: {{ stats.min_area }}</p>
+<p>Maximum Area: {{ stats.max_area }}</p>
+<p>Minimum Rooms: {{ stats.min_rooms }}</p>
+<p>Maximum Rooms: {{ stats.max_rooms }}</p>
+<p>Median Price: {{ stats.median_price }}</p>
+<p>Median Area: {{ stats.median_area }}</p>
+<p>Median Rooms: {{ stats.median_rooms }}</p>
+<p>Mean Price: {{ stats.mean_price }}</p>
+<p>Mean Area: {{ stats.mean_area }}</p>
+<p>Mean rooms: {{ stats.mean_rooms }}</p>
+<p>Standard Deviation Price: {{ stats.std_price }}</p>
+<p>Standard Deviation Area: {{ stats.std_area }}</p>
+<p>Standard Deviation Rooms: {{ stats.std_rooms }}</p>
+<h2>Histogram of Prices</h2>
+    <img src="data:image/png;base64, {{ price_histogram }}" alt="Price Histogram">
+<h2>Histogram of Areas</h2>
+    <img src="data:image/png;base64, {{ area_histogram }}" alt="Area Histogram">
+<h2>Histogram of Rooms</h2>
+    <img src="data:image/png;base64, {{ rooms_histogram }}" alt="Rooms Histogram">
+<h2>Price vs. Area</h2>
+    <img src="data:image/png;base64, {{ price_by_area }}" alt="Price-by-Area">
+<h2>Price vs. Rooms</h2>
+    <img src="data:image/png;base64, {{ price_by_rooms }}" alt="Price-by-Rooms">
+<h2>Price vs. Area and Rooms</h2>
+    <img src="data:image/png;base64, {{ price_by_area_and_rooms }}" alt="Price-by-Area-and-Rooms">
+<h2>Frequencies of Locations</h2>
+    <img src="data:image/png;base64, {{ frequency_table_of_locations }}" alt="Location Histogram">
+</body>
+</html>
