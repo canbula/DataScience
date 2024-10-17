@@ -8,8 +8,7 @@ def replace_center_with_minus_one(d, n, m):
     if m > n:
         raise ValueError("m cannot be greater than n")
 
-    # n x n boyutunda rastgele bir dizi oluştur
-    arr = np.random.randint(0, 10 ** d, size=(n, n))
+    arr = np.random.randint(0, 10 ** d, size=(n, m))
     print(f"Orijinal Dizi (n={n}, m={m}):\n", arr)
 
     if n == m:
@@ -26,7 +25,6 @@ def replace_center_with_minus_one(d, n, m):
 
     print(f"Değiştirilen Dizi:\n", arr)
     return arr
-
 
 # Test Fonksiyonları
 def test_replace_center_with_minus_one():
@@ -45,5 +43,6 @@ def test_replace_center_with_minus_one():
     array = replace_center_with_minus_one(d, n, m)
 
 
+# Testleri çalıştır
 if __name__ == "__main__":
     test_replace_center_with_minus_one()
