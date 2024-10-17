@@ -10,25 +10,22 @@ def replace_center_with_minus_one(d, n, m):
     print(f"Orijinal Dizi (n={n}, m={m}):\n", arr)
 
     # Merkezi belirle ve sadece merkezi -1 yap
-    if n % 2 == 1 and m % 2 == 1:
-        # Tek boyutlar
-        center_row = n // 2
-        center_col = m // 2
-        arr[center_row, center_col] = -1
-    elif n % 2 == 0 and m % 2 == 0:
-        # Çift boyutlar
-        center_row1 = n // 2 - 1
-        center_row2 = n // 2
-        center_col1 = m // 2 - 1
-        center_col2 = m // 2
-        arr[center_row1:center_row2 + 1, center_col1:center_col2 + 1] = -1
+    if n == m:
+        if n % 2 == 1:  
+            center_row = n // 2
+            center_col = m // 2
+            arr[center_row, center_col] = -1
+        else:  
+            center_row1 = n // 2 - 1
+            center_row2 = n // 2
+            center_col1 = m // 2 - 1
+            center_col2 = m // 2
+            arr[center_row1:center_row2 + 1, center_col1:center_col2 + 1] = -1
     elif n > m:
-        # n > m olduğunda
         center_row_start = (n - m) // 2
         center_row_end = center_row_start + m
         arr[center_row_start:center_row_end, :] = -1
     elif m > n:
-        # m > n olduğunda
         center_col_start = (m - n) // 2
         center_col_end = center_col_start + n
         arr[:, center_col_start:center_col_end] = -1
@@ -66,6 +63,7 @@ def test_replace_center_with_minus_one():
     m = 5
     print("\nTest 4: 3x5 dizi")
     array = replace_center_with_minus_one(d, n, m)
+
 
 if __name__ == "__main__":
     test_replace_center_with_minus_one()
