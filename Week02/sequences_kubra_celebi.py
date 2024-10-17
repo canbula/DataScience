@@ -1,14 +1,23 @@
-from collections import defaultdict
-
 def remove_duplicates(lst):
-    seen = set()
-    return [x for x in lst if not (x in seen or seen.add(x))]
+    seen = []
+    result = []
+    for x in lst:
+        if x not in seen:
+            seen.append(x)
+            result.append(x)
+    return result
 
 def list_counts(lst):
-    counts = defaultdict(int)
+    counts = {}
     for item in lst:
-        counts[item] += 1
-    return dict(counts)
+        if item in counts:
+            counts[item] += 1
+        else:
+            counts[item] = 1
+    return counts
 
 def reverse_dict(dct):
-    return {v: k for k, v in dct.items()}
+    reversed_dict = {}
+    for k, v in dct.items():
+        reversed_dict[v] = k
+    return reversed_dict
