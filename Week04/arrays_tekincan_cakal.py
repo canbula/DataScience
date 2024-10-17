@@ -1,3 +1,5 @@
+import numpy as np
+
 def replace_center_with_minus_one(d, n, m):
     if m > n:
         raise ValueError("m must be less than or equal to n")
