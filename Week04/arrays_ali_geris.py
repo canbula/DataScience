@@ -4,45 +4,36 @@ import numpy as np
 def replace_center_with_minus_one(d, n, m):
     if d <= 0 or n <= 0 or m <= 0:
         raise ValueError("Invalid input parameters.")
-
     if m > n:
         raise ValueError("m cannot be greater than n")
 
-    arr = np.random.randint(0, 10 ** d, size=(n, m))
-    print(f"Orijinal Dizi (n={n}, m={m}):\n", arr)
+    arr = np.random.randint(0, 10 ** d, size=(n, n))
 
-    if n == m:
-        if n % 2 == 1:
-            center_row = n // 2
-            center_col = m // 2
-            arr[center_row, center_col] = -1
-        else:
-            center_row1 = n // 2 - 1
-            center_row2 = n // 2
-            center_col1 = m // 2 - 1
-            center_col2 = m // 2
-            arr[center_row1:center_row2 + 1, center_col1:center_col2 + 1] = -1
+    start = (n - m) // 2
+    end = start + m
+    arr[start:end, start:end] = -1
 
-    print(f"Değiştirilen Dizi:\n", arr)
     return arr
 
-# Test Fonksiyonları
+
+# Test fonksiyonu
 def test_replace_center_with_minus_one():
-    # Test 1: 5x5
-    d = 2
-    n = 5
-    m = 5
-    print("\nTest 1: 5x5 dizi")
+    print("\nTest 1: 5x5 dizi ve merkez 3x3 -1 yapılmış olmalı")
+    d = 2 
+    n = 5 
+    m = 3 
+    
+    
     array = replace_center_with_minus_one(d, n, m)
 
-    # Test 2: 4x4
-    d = 3
-    n = 4
-    m = 4
-    print("\nTest 2: 4x4 dizi")
-    array = replace_center_with_minus_one(d, n, m)
+    print("Oluşturulan Dizi:")
+    print(array)
+
+    center = array[1:4, 1:4]
+    assert np.all(center == -1), "Merkezdeki elemanlar -1 yapılmalıydı!"
+    print("Merkez -1 yapıldı, test başarılı.")
 
 
-# Testleri çalıştır
+# Testi çalıştır
 if __name__ == "__main__":
     test_replace_center_with_minus_one()
