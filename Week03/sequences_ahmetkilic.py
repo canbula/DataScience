@@ -16,13 +16,12 @@ def list_counts(lst):
             counts[item] = 1
     return counts
 
-def reversed_dict(d):
-    reversed_dict={}
-    for k,v in d.items():
-        if v not in reversed_dict:
-            reversed_dict[v]=k
-
+def reverse_dict(d):
+    reversed_result = {}
+    for key, value in d.items():
+        if value not in reversed_result:
+            reversed_result[value] = key
         else:
-            reversed_dict[v] = [reversed_dict[v], k]
+            reversed_result[value] = [reversed_result[value], key]
 
-    return reversed_dict
+    return reversed_result
