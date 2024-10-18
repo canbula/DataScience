@@ -13,7 +13,7 @@ def replace_center_with_minus_one(d: int, n: int, m: int) -> [[], []]:
         else:
             for i in range(n):
                 for j in range(n):
-                    r = random.randint(1, 99)
+                    r = random.randint(10**(d-1), (10**d)-1)
                     arr[i, j] = r
             arr[((n - m) // 2):((n + m) // 2), ((n - m) // 2):((n + m) // 2)] = -1
     return arr
