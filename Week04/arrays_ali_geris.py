@@ -7,9 +7,10 @@ def replace_center_with_minus_one(d, n, m):
     if m > n:
         raise ValueError("m cannot be greater than n")
 
-    high = max(101, 10 ** d) - 1
+    low = 100
+    high = max(low + 1, 10**d)
 
-    arr = np.random.randint(100, high, size=(n, n))
+    arr = np.random.randint(low, high, size=(n, n))
 
     start = (n - m) // 2
     end = start + m
