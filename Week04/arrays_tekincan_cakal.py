@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 def replace_center_with_minus_one(d, n, m):
     if m > n:
@@ -8,7 +9,7 @@ def replace_center_with_minus_one(d, n, m):
     if n <= 0 or m <= 0:
         raise ValueError("n and m must be positive")
 
-    arr = np.random.randint(0, 10**d, (n, n))
+    arr = random.randint(10**(d-1), (10**d)-1)
 
     if m == n:
         arr.fill(-1)
