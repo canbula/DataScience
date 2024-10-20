@@ -7,8 +7,8 @@ def replace_center_with_minus_one(d, n, m):
     if m > n:
         raise ValueError("m cannot be greater than n")
 
-    low = max(10, 10 ** (d - 1))  # low değeri 10'dan küçük olamaz
-    high = max(low + 1, min(100, 10 ** d))  # high her zaman low'dan büyük olmalı
+    low = 1 
+    high = 10 ** d if d > 1 else 10
 
     # Geçerli bir aralık mı?
     if low >= high:
