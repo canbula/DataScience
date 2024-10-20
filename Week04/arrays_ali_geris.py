@@ -7,8 +7,12 @@ def replace_center_with_minus_one(d, n, m):
     if m > n:
         raise ValueError("m cannot be greater than n")
 
-    low = 100
-    high = max(low + 1, 10**d)
+    low = max(10, 10 ** (d - 1))  # low değeri 10'dan küçük olamaz
+    high = max(low + 1, min(100, 10 ** d))  # high her zaman low'dan büyük olmalı
+
+    # Geçerli bir aralık mı?
+    if low >= high:
+        raise ValueError(f"Invalid range for random generation: low={low}, high={high}")
 
     arr = np.random.randint(low, high, size=(n, n))
 
@@ -22,22 +26,18 @@ def replace_center_with_minus_one(d, n, m):
 # Test
 def test_replace_center_with_minus_one():
     print("\nTest 1: 5x5 dizi ve merkez 3x3 -1 yapılmış olmalı")
-    d = 3
+    d = 2
     n = 5
     m = 3
 
-    # Generate a 5x5 matrix
     array = replace_center_with_minus_one(d, n, m)
 
     print("Oluşturulan Dizi:")
     print(array)
 
-    # Check that the 3x3 center is -1
     center = array[1:4, 1:4]
-    assert np.all(center == -1), "Merkezdeki elemanlar -1 yapılmalıydı!"
+    assert np.all(center == -1), "Merkez -1 ile doldurulmalı!"
     print("Merkez -1 yapıldı, test başarılı.")
 
-
-# Run the test
 if __name__ == "__main__":
     test_replace_center_with_minus_one()
