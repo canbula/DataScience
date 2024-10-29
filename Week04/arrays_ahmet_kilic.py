@@ -5,7 +5,7 @@ def replace_center_with_minus_one(d, n, m):
     if m > n or d <= 0 or n < 0 or m < 0:
         raise ValueError("Parametre Hatalı")
 
-    min_sayi = 10**(d - 1) if d > 1 else 0
+    min_sayi = 10**(d - 1) if d > 0 else 0
     max_sayi = 10**d - 1
 
     array = np.random.randint(min_sayi, max_sayi + 1, size=(n, n))
