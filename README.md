@@ -17,3 +17,6 @@ At the end of the every chapter, you will also find a Problem Set.
 You can find some supplementary videos from previous years in the following YouTube playlist.
 
 https://youtube.com/playlist?list=PL30NBs02RsiUNxMoibOtpaKJ4jg_0PWCM&si=WyxmcLCuxpJZ7nol
+
+# How to Create a Pull Request
+https://github.com/canbula/Statistics/assets/5307181/1995892c-6e7b-40ce-be7f-8f16f1aee0e0
